@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>Giphy API</title>
+</head>
+
+<body>
+  <div class="ajax" data-count=10></div>
+  <div class="ajax" data-count=10></div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script type="text/javascript">
+
+    // Example queryURL for Giphy API
+    var queryURL = "https://api.giphy.com/v1/gifs/trending?api_key=dc6zaTOxFJmzC";
+
+    $.ajax({
+      url: queryURL,
+      method: 'GET'
+    }).done(function(response) {
+      console.log(response);
+
+      let count = $(".ajax").attr("data-count");
+
+      count < response.data.length ? count : response.data.length
+
+      for(let i = 0; i < count; i++) {
+        let currentGiphy = response.data[i];
+        const title = '<div class="comment-item_title">' + currentGiphy.title + "</div>";
+        const url = '<div class="comment-item_url">' + currentGiphy.embed_url + "</div>";
+        const item = '<div class="comment-item">' + title + url + '</div>';
+
+        $(".ajax").append(item + "<br>");
+      }
+
+    });
+  </script>
+
+</body>
+
+</html>

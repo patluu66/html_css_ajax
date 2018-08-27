@@ -1,0 +1,89 @@
+.gtdImage {
+  padding: 0 0 0 200px;
+}
+
+.yellowImage {
+  margin: 0 0 100px 0;
+  padding: 0;
+}
+
+/* .threeImage {
+    margin: 0 0 20px 0;
+} */
+
+.container {
+  text-align: left;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+
+.container1 {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin: 0 0 180px 0;
+}
+
+.centeredA {
+  position: absolute;
+     top: 50%;
+     left: 50%;
+     transform: translate(-50%, -50%);
+}
+
+.lorem {
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+
+.hello {
+  color: #46505e;
+  font-size: 80px;
+  font-weight: bold;
+}
+
+.howStarted {
+  color: #efbe2b;
+  font-size: 50px;
+  font-weight: bold;
+  text-align: center;
+  margin: 0 0 40px 0;
+}
+
+.centered {
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.centered2 {
+    position: absolute;
+    top: 100%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+}
+
+.centered3 {
+    position: absolute;
+    top: 100%;
+    left: 70%;
+    transform: translate(-50%, -50%);
+}
+
+.footer {
+  color: white;
+  text-align: center;
+}
+
+.teamFooter {
+  padding: 50px 0 0 0;
+  color: #efbe2b;
+  font-weight: bold;
+}
+
+.learnFooter {
+  padding: 0 0 0 0;
+  color: #efbe2b;
+  font-weight: bold;
+}
